@@ -1,0 +1,121 @@
+/*Estilos generales*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main{
+    background-color: #ebebeb;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripciones{
+    font-size: 16px;
+}
+
+/*Estilos del header*/
+header{
+    background: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 30px;
+}
+
+header .form .input{
+    background-color: white;
+    color: #666;
+    border: 1px solid #000;
+    padding: 1px;
+    outline: none;
+    width: 50%;
+    margin-left: 20px;
+}
+header .form .submit{
+    background-color: #ebebeb;
+    width: 15px;
+    border: 1px solid #000;
+    margin: 3px 0px 0px 20px;
+    border-radius: 3px;
+}
+
+header .form .submit i{
+    margin: 3px 1px 0px 1.5px;
+}
+
+header div.header-top p{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header div.burguer-menu{
+    text-align: center;
+}
+
+header div.burguer-menu i{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 40px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+header nav ul{
+    margin-top: 20px;
+}
+
+
+.imagen-producto{
+    width: 360px;
+}
+
+
+
+/*Estilos del footer*/
+footer section{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+}
+footer section .footer-titulo{
+    font-weight: bold;
+}
+footer section i{
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
