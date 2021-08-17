@@ -30,7 +30,7 @@
         
         
     
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li> <a href="#">Ofertas</a></li>
                 <li> <a href="#">Tiendas Oficiales</a></li>
@@ -46,7 +46,7 @@
             </ul>
         </nav>
     
-        <div class="burguer-menu">
+        <div class="burger-menu">
             <i class="fa fa-bars burger"></i>
         </div>
     
@@ -65,12 +65,12 @@
             <div class="campos-login">
                 <div class="data-login">
                     <label for="usuario">Nombre de usuari@: </label>
-                    <input type="password" name="usuario" id="usuario">
+                    <input type="password" name="usuario" id="usuario" required minlength="2">
                 </div>
         
                 <div class="data-login">
                     <label for="password">Contraseña: </label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required minlength="8">
                 </div>
         
                 <div class="data-login-btn">
@@ -84,7 +84,7 @@
 
 <footer>
 
-    <section class="seccion-footer">
+    <section>
         <i class="fas fa-credit-card"></i>
         <p class="footer-titulo">Pagá con tarjeta o en efectivo</p>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 
@@ -92,7 +92,7 @@
         </p>
     </section>
 
-    <section class="seccion-footer">
+    <section>
         <i class="fas fa-gift"></i>
         <p class="footer-titulo">Envío gratis desde $ 2.500</p>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
@@ -100,7 +100,7 @@
         </p>
     </section>
 
-    <section class="seccion-footer">
+    <section>
         <i class="fas fa-user-shield"></i>
         <p class="footer-titulo">Seguridad, de principio a fin</p>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
@@ -108,9 +108,7 @@
         </p>
     </section>
 
-    <section>
         <p class="footer-titulo">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-    </section>
 
 </footer>
 
