@@ -18,6 +18,7 @@ body{
 
 .precios{
     font-size: 18px;
+    font-weight: normal;
 }
 
 .descuentos{
@@ -26,6 +27,8 @@ body{
 
 .descripciones{
     font-size: 16px;
+    color: #666;
+    font-weight: normal;
 }
 
 
@@ -75,11 +78,7 @@ header .form .submit i{
     margin: 3px 1px 0px 1.5px;
 }
 
-header div.header-top p{
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
+
 
 header ul li{
     list-style-type: none;
@@ -114,8 +113,15 @@ header nav ul{
 
  .header-top{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 5%;
+    justify-content: space-around;
+    padding: 2%;
+ }
+
+ .compra-cuotas{
+     display: flex;
+     justify-content: space-around;
  }
 
 
@@ -132,10 +138,6 @@ main{
     margin: 0 auto;
 }
 
-main section article{
-    background-color: #fff;    
-    margin: 10px 0px;
-}
 
 main section article i{
     display: block;
@@ -159,6 +161,11 @@ main section article i,
 .descripciones{
     display: none;
     margin-top: 20px;
+}
+
+.titulares{
+    margin: 20px 0px;
+    color: #666;
 }
 
 .articulo{
@@ -194,6 +201,7 @@ div.ofertas{
 
 .descuentos{
     width: 70%;
+    text-align: center;
 }
 
 
@@ -219,6 +227,9 @@ footer section i{
     font-size: 2em;
     margin-bottom: 10px;
     
+}
+footer p{
+    margin-top: 10px;
 }
 
 /* Estilos del formulario de register */
@@ -302,12 +313,16 @@ footer section i{
 
 /* MediaQueries */
 @media (min-width: 361px){
-    main section div.productos{
+    .productos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .productos article{
+        width: 45%;
     }
 
     .precio,
@@ -317,21 +332,25 @@ footer section i{
 
     header .navegacion{
         display: inline;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+
+    header .navegacion ul{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+
     div.burger-menu{
         display: none;
-    }
-
-}
-
-@media (min-width: 769px){
-    main section div.productos article{
-        width: 22%;
     }
 
     .header-top{
         display: flex;
         flex-wrap: wrap;
+        padding: 5%;
     }
 
     .logo{
@@ -340,13 +359,30 @@ footer section i{
     
     .form{
         width: 33%;
+        display: flex;
+        justify-content: center;
     }
+
+    .header-top p{
+        width: 33%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 769px){
+    .productos article{
+        width: 22%;
+    }
+
 
     footer{
         display: flex;
         flex-wrap: wrap;
     }
-    .seccion-footer{
+    
+    footer section{
         width: 33%;
     }
 
